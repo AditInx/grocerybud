@@ -218,6 +218,7 @@ Variables
   }
   .submit-btn {
     background: var(--clr-primary-8);
+    color: black;
     border-color: transparent;
     flex: 0 0 5rem;
     display: grid;
@@ -266,24 +267,33 @@ Variables
   }
   .edit-btn,
   .delete-btn {
-    background: transparent;
     border-color: transparent;
     cursor: pointer;
     font-size: 0.7rem;
     margin: 0 0.15rem;
     transition: var(--transition);
+    background-color: red;
   }
   .edit-btn {
-    color: var(--clr-green-light);
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
   }
   .edit-btn:hover {
-    color: var(--clr-green-dark);
+    color: green;
+    background-color: white;
   }
   .delete-btn {
-    color: var(--clr-red-light);
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;
   }
   .delete-btn:hover {
     color: var(--clr-red-dark);
+    background-color: white;
   }
   .clear-btn {
     text-transform: capitalize;
@@ -303,4 +313,18 @@ Variables
   }
   .clear-btn:hover {
     color: var(--clr-red-dark);
+  }
+
+
+  .checked{
+    text-decoration: line-through;
+    color: gray;
+  }
+
+  .unchecked{
+    text-decoration: none;
+  }
+
+  .display{
+    display: none;
   }
